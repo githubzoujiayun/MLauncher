@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="surfaceParams_x">452</integer>
+    <integer name="surfaceParams_y">246</integer>
+    <integer name="surfaceParams_width">380</integer>
+    <integer name="surfaceParams_height">212</integer>
+    <integer name="videoWindowType_x">669</integer>
+    <integer name="videoWindowType_y">365</integer>
+    <integer name="videoWindowType_width">615</integer>
+    <integer name="videoWindowType_height">332</integer>
+    <integer name="Widget_width">200</integer>
+    <integer name="Widget_height">140</integer>
+    <integer name="webWidget_x">213</integer>
+    <integer name="webWidget_y">280</integer>
+    <integer name="WeatherWidget_x">427</integer>
+    <integer name="WeatherWidget_y">280</integer>
+    <integer name="appWidget_x">641</integer>
+    <integer name="appWidget_y">280</integer>
+    <integer name="Widget_3dwidth">360</integer>
+    <integer name="Widget_3dheight">540</integer>
+
+</resources>

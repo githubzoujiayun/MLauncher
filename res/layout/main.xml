@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_3" >
+
+    <Button
+        android:id="@+id/btn_tv"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="144dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/tvbutton_bg"
+        android:focusable="true"
+        android:nextFocusDown="@+id/btn_movies"
+        android:nextFocusUp="@+id/btn_system" />
+
+    <!-- here displays the tv numbers start -->
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_tv"
+        android:layout_marginRight="373dp"
+        android:layout_marginTop="-85dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="64sp" />
+    </LinearLayout>
+    <!-- here displays the tv numbers end -->
+
+    <Button
+        android:id="@+id/btn_movies"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_tv"
+        android:layout_marginRight="144dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/movie_bg"
+        android:focusable="true"
+        android:nextFocusDown="@+id/btn_chrome"
+        android:nextFocusUp="@+id/btn_tv" />
+
+    <Button
+        android:id="@+id/btn_chrome"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_movies"
+        android:layout_marginRight="144dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/chrome_bg"
+        android:focusable="true"
+        android:nextFocusDown="@+id/btn_apps"
+        android:nextFocusUp="@+id/btn_movies" />
+
+    <Button
+        android:id="@+id/btn_apps"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_chrome"
+        android:layout_marginRight="144dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/app_bg"
+        android:focusable="true"
+        android:nextFocusDown="@+id/btn_system"
+        android:nextFocusUp="@+id/btn_chrome" />
+
+    <!-- here displays the apps numbers start -->
+
+    <LinearLayout
+        android:layout_width="80dp"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_apps"
+        android:layout_marginRight="368dp"
+        android:layout_marginTop="-85dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/appsNumber_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="64sp" />
+    </LinearLayout>
+    <!-- here displays the apps numbers end -->
+
+    <Button
+        android:id="@+id/btn_system"
+        android:layout_width="315dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_apps"
+        android:layout_marginRight="144dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/systembutton_bg"
+        android:focusable="true"
+        android:nextFocusDown="@+id/btn_tv"
+        android:nextFocusUp="@+id/btn_apps" />
+
+    <ImageView
+        android:id="@+id/cloud"
+        android:layout_width="360dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/cloud"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="412dp"
+        android:layout_marginTop="59dp"
+        android:layout_toRightOf="@+id/cloud"
+        android:src="@drawable/f"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="265dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/minus"
+        android:textColor="#ffffff"
+        android:textSize="80sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/temperatrue_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="25dp"
+        android:textColor="#ffffff"
+        android:textSize="120sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/clock1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="100dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/digital_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="73dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_toRightOf="@+id/clock1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/digitalTime_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="120sp" />
+    </LinearLayout>
+
+</RelativeLayout>
